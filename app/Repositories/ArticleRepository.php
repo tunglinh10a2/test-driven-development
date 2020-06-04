@@ -12,8 +12,8 @@ class ArticleRepository extends AppRepository implements ArticleRepositoryInterf
         parent::__construct($model);
     }
 
-    public function store(array $data)
-    {
-        return $this->model->create($data);
-    }
+//    public function store(array $data)
+//    {
+//        return $this->model->create($data);
+//    }
 }

@@ -10,11 +10,11 @@ use Illuminate\Http\Response;
 
 class ArticlesApiController extends Controller
 {
-    protected $service;
+//    protected $service;
 
     public function __construct(ArticleService $service)
     {
-        $this->service = $service;
+//        $this->service = $service;
     }
 
     /**
@@ -45,7 +45,7 @@ class ArticlesApiController extends Controller
      */
     public function store(CreateArticleRequest $request)
     {
-        return $this->service->store(['title' => $request->title, 'content_article' => $request->content_article]);
+//        return $this->service->store(['title' => $request->title, 'content_article' => $request->content_article]);
     }
 
     /**

@@ -33,10 +33,10 @@ abstract class AppService
         return $this->repository->findById($id, $columns);
     }
 
-    public function store(array $data)
-    {
-        return $this->repository->store($data);
-    }
+//    public function store(array $data)
+//    {
+//        return $this->repository->store($data);
+//    }
 
     public function insert(array $data)
     {

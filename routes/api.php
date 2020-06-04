@@ -19,6 +19,6 @@ use Illuminate\Support\Facades\Route;
 //});
 Route::group(['namespace' => 'Api'], function () {
     Route::group(['prefix' => 'v1'], function () {
-        Route::resource('articles', ArticlesApiController::class);
+//        Route::resource('articles', ArticlesApiController::class);
     });
 });

@@ -41,7 +41,7 @@ interface AppRepositoryInterface
      *
      * @return int
      */
-    public function store(array $data);
+//    public function store(array $data);
 
     /**
      * @param $id

@@ -97,10 +97,10 @@ class AppRepository implements AppRepositoryInterface
      *
      * @return int
      */
-    public function store(array $data)
-    {
-        return $this->model->create($data);
-    }
+//    public function store(array $data)
+//    {
+//        return $this->model->create($data);
+//    }
 
     /**
      * @param $id
