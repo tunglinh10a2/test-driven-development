@@ -3,9 +3,15 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\ArticleRepository;
+use App\Repositories\ArticleRepositoryInterface;
 
 class AppServiceProvider extends ServiceProvider
 {
+
+    protected $services = [
+        ArticleRepositoryInterface::class => ArticleRepository::class
+    ];
     /**
      * Register any application services.
      *
@@ -13,7 +19,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        foreach ($this->services as $interface => $implement) {
+            $this->app->bind($interface, $implement);
+        }
     }
 
     /**
