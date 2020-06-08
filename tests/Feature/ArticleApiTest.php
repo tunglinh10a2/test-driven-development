@@ -5,7 +5,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 
-class ArticleApiUnitTest extends TestCase
+class ArticleApiTest extends TestCase
 {
     public function test_it_can_create_an_article()
     {

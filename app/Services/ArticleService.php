@@ -16,11 +16,11 @@ class ArticleService extends AppService
         parent::__construct($repository);
     }
 
-//    public function store(array $data)
-//    {
+    public function store(array $data)
+    {
 //        $this->repository->findById(1);
 //
-//        return $this->repository->storeData($data);
+        return $this->repository->storeData($data);
 //        return $this->repository->store($data);
-//    }
+    }
 }

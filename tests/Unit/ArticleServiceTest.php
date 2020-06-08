@@ -29,13 +29,13 @@ class ArticleServiceTest extends UnitTestCase
 
     public function test_store_article_success()
     {
-        $this->articleRepository->shouldReceive('store')
-            ->once()
-            ->andReturn(true);
-
-//        $this->articleRepository->shouldReceive('storeData')
+//        $this->articleRepository->shouldReceive('store')
 //            ->once()
 //            ->andReturn(true);
+//
+        $this->articleRepository->shouldReceive('storeData')
+            ->once()
+            ->andReturn(true);
 
         $result = $this->articleService->store(['title' => 'test article', 'content_article' => 'test content article']);
         $this->assertTrue($result);
